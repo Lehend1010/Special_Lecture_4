@@ -15,6 +15,6 @@ class TestCSVPrinter (unittest.TestCase):
         
     def test_read3(self):
         with self.assertRaises(FileNotFoundError) as e:
-            printer = CSVPrinter("Sample.csv")
+            printer = CSVPrinter("Wrong_Sample.csv")
             line = printer.read()
             print(line)
